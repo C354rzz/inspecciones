@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/listadoPedidoFragment">
+
+    <fragment
+        android:id="@+id/listadoPedidoFragment"
+        android:name="com.coppel.apkqa001inspecciones.listadoPedido.fragments.ListadoPedidoFragment"
+        android:label="listado_pedido_fragment"
+        tools:layout="@layout/listado_pedido_fragment" >
+        <action
+            android:id="@+id/action_listadoPedidoFragment_to_pedidoProductoFragment"
+            app:destination="@id/pedidoProductoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pedidoProductoFragment"
+        android:name="com.coppel.apkqa001inspecciones.listadoPedido.fragments.PedidoProductoFragment"
+        android:label="fragment_pedido_producto"
+        tools:layout="@layout/fragment_pedido_producto" />
+</navigation>

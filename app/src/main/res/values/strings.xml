@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">apkqa001inspecciones</string>
+
+    <!--Encabezado Activity-->
+    <string name="title_encabezado">Datos de Inspección</string>
+    <string name="label_fecha_inspeccion">Fecha</string>
+    <string name="label_region_inspeccion">Region</string>
+    <string name="label_tipoInspeccion_inspeccion">Tipo Inspección</string>
+    <string name="label_proveedor_inspeccion">Proveedor</string>
+    <string name="label_pedido_inspeccion">Pedido</string>
+    <string name="btn_comenzar_insp">Comenzar Inspección</string>
+
+    <string name="title_listado">Datos de Pedido</string>
+    <string name="proveedor_placeholder">76422 MUEBLES PARA EL HOGAR VICTORIA</string>
+    <string name="btn_finalizar_insp">Finalizar Inspección</string>
+
+
+    <string name="title_advertencia">Advertencia</string>
+    <string name="error_obtener_listado_pedido">Error en consultar servicio. \nHubo un error, por favor intente de nuevo</string>
+
+
+    <string name="inspeccion_loads_name_app">Inspección Calidad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

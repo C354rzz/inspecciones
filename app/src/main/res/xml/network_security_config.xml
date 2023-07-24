@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.28.114.110</domain>
+        <domain includeSubdomains="true">progcedisapp.coppel.io</domain>
+        <domain includeSubdomains="true">tt27cedisapp.coppel.io</domain>
+        <domain includeSubdomains="true">10.28.114.24</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">10.59.22.15</domain>
+        <domain includeSubdomains="true">10.59.18.72</domain>
+        <domain includeSubdomains="true">10.65.34.72</domain>
+    </domain-config>
+</network-security-config>
