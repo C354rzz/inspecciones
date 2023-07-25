@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import com.coppel.apkqa001inspecciones.R
 import com.coppel.apkqa001inspecciones.databinding.FragmentPedidoProductoBinding
 import com.coppel.apkqa001inspecciones.listadoPedido.viewModel.ListadoPedidoViewModel
 

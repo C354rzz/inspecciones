@@ -117,7 +117,7 @@
             android:id="@+id/block"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#33333333"
+            android:background="@color/md_light_background"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

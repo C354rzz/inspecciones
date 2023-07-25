@@ -18,6 +18,12 @@
     <string name="title_advertencia">Advertencia</string>
     <string name="error_obtener_listado_pedido">Error en consultar servicio. \nHubo un error, por favor intente de nuevo</string>
 
+    <string name="producto_placeholder">6536673 - Lavadora Mabe Dos Tinas LMDX3123PBAB0 13 kg Blanca</string>
+    <string name="title_producto">Datos de Producto</string>
+    <string name="recibir">Cantidad Recibir</string>
+    <string name="muestra">Cantidad Muestra</string>
+
+
 
     <string name="inspeccion_loads_name_app">Inspección Calidad</string>
     <!-- TODO: Remove or change this placeholder text -->

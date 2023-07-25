@@ -1,5 +1,6 @@
 package com.coppel.apkqa001inspecciones.listadoPedido.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,15 +14,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.coppel.apkqa001inspecciones.R
 import com.coppel.apkqa001inspecciones.databinding.ListadoPedidoFragmentBinding
+import com.coppel.apkqa001inspecciones.inspeccionProducto.InspeccionProductoActivity
+import com.coppel.apkqa001inspecciones.inspeccionProducto.viewModel.InspeccionProductoViewModel
 import com.coppel.apkqa001inspecciones.listadoPedido.adapters.ListadoPedidoAdapter
 import com.coppel.apkqa001inspecciones.listadoPedido.viewModel.ListadoPedidoViewModel
 import com.coppel.apkqa001inspecciones.models.Producto
 import com.coppel.apkqa001inspecciones.repository.InspeccionPedidoProvider
+import com.google.gson.Gson
 
 class ListadoPedidoFragment : Fragment() {
 
     private lateinit var binding: ListadoPedidoFragmentBinding
     private val viewModel: ListadoPedidoViewModel by activityViewModels()
+    private val viewModelProducto: InspeccionProductoViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +46,6 @@ class ListadoPedidoFragment : Fragment() {
     private fun initRecyclerView2() {
         val manager = LinearLayoutManager(context)
         val decoration = DividerItemDecoration(context, manager.orientation)
-        //val recyclerView  = findViewById<RecyclerView>(R.id.rv_list_productos)
         binding.rvListProductos.layoutManager = manager
         binding.rvListProductos.adapter = ListadoPedidoAdapter(InspeccionPedidoProvider.pedidoList){
                 producto -> onItemSelecter(producto)
@@ -50,14 +54,20 @@ class ListadoPedidoFragment : Fragment() {
     }
 
     private fun onItemSelecter(producto: Producto) {
-        //navigateToSubalamcenDetalle()
+        val sendProducto = Bundle()
+        sendProducto.putString("nombre", producto.nombre)
+        sendProducto.putString("sku", producto.sku.toString())
+
+        val intent = Intent(context, InspeccionProductoActivity::class.java)
+        intent.putExtras(sendProducto)
+        startActivity(intent)
+
         Toast.makeText(
             context,
             "Subalmacen: ${producto.nombre}",
             Toast.LENGTH_SHORT
         ).show()
     }
-
 
     private fun initRecyclerView(listaPedidos: MutableList<Producto>){
         val manager = LinearLayoutManager(context)

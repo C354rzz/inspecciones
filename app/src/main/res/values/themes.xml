@@ -96,4 +96,11 @@
         <item name="android:fontFamily">@font/circular_std_bold</item>
     </style>
 
+<!--    Nombre Producto-->
+    <style name="name_producto">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#68686A</item>
+        <item name="android:fontFamily">@font/circular_std_bold</item>
+    </style>
+
 </resources>

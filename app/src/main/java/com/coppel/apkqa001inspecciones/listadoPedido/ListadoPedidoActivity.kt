@@ -28,7 +28,7 @@ class ListadoPedidoActivity : AppCompatActivity() {
         binding = ActivityListadoPedidoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        subscribeObservers()
+        //subscribeObservers()
 
         supportActionBar?.title = getString(R.string.inspeccion_loads_name_app)
         btn_finalizar.text = getString(R.string.btn_finalizar_insp)
