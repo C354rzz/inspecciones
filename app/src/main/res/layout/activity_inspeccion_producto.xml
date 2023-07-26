@@ -53,13 +53,13 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/cantidades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:paddingHorizontal="5dp"
         android:paddingTop="10dp"
-
         app:layout_constraintTop_toBottomOf="@+id/producto_header"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
@@ -84,7 +84,8 @@
                 android:lineSpacingExtra="5sp"
                 android:text="@string/recibir"
                 android:textAppearance="@style/mini_title"
-                android:translationY="-2.3sp" />
+                android:translationY="-2.3sp"/>
+
 
             <com.coppel.framework.ui.view.edittexts.TextInputEditText
                 android:id="@+id/piezas_recibir"
@@ -93,8 +94,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="top"
-                android:layout_marginHorizontal="10dp"
-                android:inputType="number">
+                android:layout_marginHorizontal="10dp">
 
             </com.coppel.framework.ui.view.edittexts.TextInputEditText>
 
@@ -134,5 +134,114 @@
                 android:inputType="number"/>
         </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cantidades">
+
+
+        <TextView
+            android:id="@+id/pregunta_hallazgos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/helveticaneue"
+            android:textSize="20dp"
+            android:gravity="top"
+            android:text="@string/pregunta_manual"
+            style="@style/mini_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+            <RadioButton android:id="@+id/rb_manual_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si"
+                android:fontFamily="@font/helveticaneue"
+                android:textSize="14dp"
+                android:onClick="onRBClickedEmpaque"/>
+            <RadioButton android:id="@+id/rb_manual_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:fontFamily="@font/helveticaneue"
+                android:textSize="14dp"
+                android:onClick="onRBClickedEmpaque"/>
+            <RadioButton android:id="@+id/rb_manual_na"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:fontFamily="@font/helveticaneue"
+                android:textSize="14dp"
+                android:onClick="onRBClickedEmpaque"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/pregunta_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/helveticaneue"
+            android:textSize="20dp"
+            android:gravity="top"
+            style="@style/mini_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/pregunta_hallazgos" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+            <RadioButton android:id="@+id/rb_hallazgo_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si"
+                android:fontFamily="@font/helveticaneue"
+                android:textSize="14dp"
+                android:onClick="onRbClickedHallazgo"/>
+            <RadioButton android:id="@+id/rb_hallazgo_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:fontFamily="@font/helveticaneue"
+                android:textSize="14dp"
+                android:onClick="onRbClickedHallazgo"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finalizar"
+        style="@style/ActiveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btn_Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--app:layout_constraintTop_toBottomOf="@+id/pedido_body"-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

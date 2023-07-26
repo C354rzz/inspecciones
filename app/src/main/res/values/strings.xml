@@ -22,6 +22,12 @@
     <string name="title_producto">Datos de Producto</string>
     <string name="recibir">Cantidad Recibir</string>
     <string name="muestra">Cantidad Muestra</string>
+    <string name="pregunta_manual">¿Cumple con los criterios establecidos en el manual?*</string>
+    <string name="si">SI</string>
+    <string name="no">NO</string>
+    <string name="na">No cuenta con manual de empaque</string>
+    <string name="pregunta_hallazgos">¿Se encontraron hallazgos en empaque de este producto?*</string>
+    <string name="btn_Continuar">Continuar</string>
 
 
 
