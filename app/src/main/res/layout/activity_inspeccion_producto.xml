@@ -228,7 +228,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_finalizar"
+        android:id="@+id/btn_continuar1"
         style="@style/ActiveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

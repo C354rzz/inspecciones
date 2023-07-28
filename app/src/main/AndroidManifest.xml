@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.coppel.apkqa001inspecciones">
 
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -19,6 +20,9 @@
         android:theme="@style/Theme.Coppel.Blanco"
         android:usesCleartextTraffic="true"
         tools:targetApi="n">
+        <activity
+            android:name=".evidenciaFotoEmpaque.EvidenciaFotoEmpaqueActivity"
+            android:exported="true" />
         <activity
             android:name=".inspeccionProducto.InspeccionProductoActivity"
             android:exported="true" />

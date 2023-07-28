@@ -1,13 +1,17 @@
 package com.coppel.apkqa001inspecciones.inspeccionProducto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.RadioButton
 import androidx.activity.viewModels
 import com.coppel.apkqa001inspecciones.R
 import com.coppel.apkqa001inspecciones.databinding.ActivityInspeccionProductoBinding
+import com.coppel.apkqa001inspecciones.evidenciaFotoEmpaque.EvidenciaFotoEmpaqueActivity
 import com.coppel.apkqa001inspecciones.inspeccionProducto.viewModel.InspeccionProductoViewModel
+import com.coppel.apkqa001inspecciones.listadoPedido.ListadoPedidoActivity
 
 
 class InspeccionProductoActivity : AppCompatActivity() {
@@ -24,6 +28,12 @@ class InspeccionProductoActivity : AppCompatActivity() {
         if (getProducto != null) {
             binding.tvNombreProducto.text =
                 "${getProducto.getString("sku") + " - " + getProducto.getString("nombre")}"
+        }
+
+        val btnComenzar1 = findViewById<Button>(R.id.btn_continuar1)
+        btnComenzar1.setOnClickListener {
+            val intent = Intent(this, EvidenciaFotoEmpaqueActivity::class.java)
+            startActivity(intent)
         }
     }
 
