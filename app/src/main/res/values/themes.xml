@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <style name="Theme.Coppel.Blanco" parent="Theme.Coppel.White">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
@@ -96,11 +97,16 @@
         <item name="android:fontFamily">@font/circular_std_bold</item>
     </style>
 
-<!--    Nombre Producto-->
+    <!--    Nombre Producto-->
     <style name="name_producto">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#68686A</item>
         <item name="android:fontFamily">@font/circular_std_bold</item>
+    </style>
+
+    <style name="ThemeOverlay.Apkqa001inspecciones.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
 
 </resources>

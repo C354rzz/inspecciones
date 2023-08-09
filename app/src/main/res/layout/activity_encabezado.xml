@@ -84,7 +84,7 @@
                     android:id="@+id/fecha_encabezado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"/>
+                    android:layout_marginHorizontal="10dp" />
 
                 <TextView
                     android:id="@+id/labelregion"
@@ -125,7 +125,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:layout_marginBottom="20dp"/>
+                    android:layout_marginBottom="20dp"
+                    android:paddingBottom="5dp"/>
 
             </LinearLayout>
 
@@ -159,42 +160,42 @@
                     android:id="@+id/labelproveedorinspeccion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="5sp"
                     android:text="@string/label_proveedor_inspeccion"
                     android:textAppearance="@style/LabelDefault"
-                    android:lineSpacingExtra="5sp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:translationY="-2.46sp"
-                    android:gravity="top"
-                    android:layout_marginTop="10dp"
-                    />
+                    android:translationY="-2.46sp" />
 
                 <com.coppel.framework.ui.view.edittexts.TextInputEditText
                     android:id="@+id/proveedor_encabezado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"/>
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingBottom="5dp" />
 
                 <TextView
                     android:id="@+id/labelpedidoinspeccion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="5sp"
                     android:text="@string/label_pedido_inspeccion"
                     android:textAppearance="@style/LabelDefault"
-                    android:lineSpacingExtra="5sp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:translationY="-2.46sp"
-                    android:gravity="top"
-                    android:layout_marginTop="10dp"
-                    />
+                    android:translationY="-2.46sp" />
 
                 <com.coppel.framework.ui.view.edittexts.TextInputEditText
                     android:id="@+id/pedido_encabezado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:layout_marginBottom="20dp"/>
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="5dp" />
 
             </LinearLayout>
 

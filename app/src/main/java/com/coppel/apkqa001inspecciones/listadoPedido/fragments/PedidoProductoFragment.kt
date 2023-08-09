@@ -19,15 +19,8 @@ class PedidoProductoFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentPedidoProductoBinding.inflate(inflater, container, false)
         return binding.root
-        //return inflater.inflate(R.layout.fragment_pedido_producto, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
     }
 
     private fun obtenerProductoPedido(){

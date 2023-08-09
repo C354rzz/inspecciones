@@ -4,9 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.coppel.apkqa001inspecciones.R
 import com.coppel.apkqa001inspecciones.databinding.ActivityListadoPedidoBinding
 import com.coppel.apkqa001inspecciones.listadoPedido.viewModel.ListadoPedidoViewModel
@@ -23,7 +20,6 @@ class ListadoPedidoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_listado_pedido)
 
         binding = ActivityListadoPedidoBinding.inflate(layoutInflater)
         setContentView(binding.root)

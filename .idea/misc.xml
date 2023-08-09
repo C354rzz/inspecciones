@@ -6,14 +6,17 @@
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/drawable/label_deehabilitado.xml" value="0.2985" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/drawable/round_button_disabled.xml" value="0.2985" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/activity_encabezado.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/activity_evidencia_foto_empaque.xml" value="0.3671875" />
+        <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/activity_evidencia_foto_empaque.xml" value="0.22" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/activity_inspeccion_producto.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/activity_listado_pedido.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/fragment_listado_foto_manual.xml" value="0.3671875" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/fragment_listado_pedido.xml" value="0.11803444782168186" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/fragment_pedido_producto.xml" value="0.3671875" />
+        <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/item_rv_listado_foto_manual.xml" value="0.22" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/item_rv_listado_pedido.xml" value="0.290625" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/layout/listado_pedido_fragment.xml" value="0.1717325227963526" />
+        <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/xml/file_paths.xml" value="0.17857142857142858" />
         <entry key="..\:/Users/julio.armijo/Documents/JA_Resplado/Coppel/inspecciones/apkqa001inspecciones/app/src/main/res/xml/network_security_config.xml" value="0.17857142857142858" />
       </map>
     </option>

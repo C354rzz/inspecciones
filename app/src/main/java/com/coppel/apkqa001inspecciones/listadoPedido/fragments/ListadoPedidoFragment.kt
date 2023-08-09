@@ -6,12 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.coppel.apkqa001inspecciones.R
 import com.coppel.apkqa001inspecciones.databinding.ListadoPedidoFragmentBinding
 import com.coppel.apkqa001inspecciones.inspeccionProducto.InspeccionProductoActivity
@@ -20,7 +18,6 @@ import com.coppel.apkqa001inspecciones.listadoPedido.adapters.ListadoPedidoAdapt
 import com.coppel.apkqa001inspecciones.listadoPedido.viewModel.ListadoPedidoViewModel
 import com.coppel.apkqa001inspecciones.models.Producto
 import com.coppel.apkqa001inspecciones.repository.InspeccionPedidoProvider
-import com.google.gson.Gson
 
 class ListadoPedidoFragment : Fragment() {
 
@@ -62,11 +59,11 @@ class ListadoPedidoFragment : Fragment() {
         intent.putExtras(sendProducto)
         startActivity(intent)
 
-        Toast.makeText(
+        /*Toast.makeText(
             context,
             "Subalmacen: ${producto.nombre}",
             Toast.LENGTH_SHORT
-        ).show()
+        ).show()*/
     }
 
     private fun initRecyclerView(listaPedidos: MutableList<Producto>){
